@@ -16,19 +16,19 @@ iOS 11.0+
 
 ## Usage
 
-![home](https://github.com/SnehaSeeunvasavarathan/sudokusolver/blob/main/images/home.png)
+![home](https://github.com/SnehaSeenuvasavarathan/sudokusolver/blob/main/images/home.png)
 
 Step #1: Take an image of the puzzle you wish to solve
 
-![take_photo](https://github.com/SnehaSeeunvasavarathan/sudokusolver/blob/main/images/take_photo.png)
+![take_photo](https://github.com/SnehaSeenuvasavarathan/sudokusolver/blob/main/images/take_photo.png)
 
 Step #2: Click on 'Use photo'
 
-![use_photo](https://github.com/SnehaSeeunvasavarathan/sudokusolver/blob/main/images/use_photo.png)
+![use_photo](https://github.com/SnehaSeenuvasavarathan/sudokusolver/blob/main/images/use_photo.png)
 
 Step #3: The solved puzzle will be displayed. If there is no solution, you will be informed.
 
-![solved_puzzle](https://github.com/SnehaSeeunvasavarathan/sudokusolver/blob/main/images/solved_puzzle.png)
+![solved_puzzle](https://github.com/SnehaSeenuvasavarathan/sudokusolver/blob/main/images/solved_puzzle.png)
 
 ## Working
 
@@ -36,7 +36,7 @@ Step #3: The solved puzzle will be displayed. If there is no solution, you will 
 
 The outer rectangle of the puzzle is extracted using the Vision API's VNDetectRectanglesRequest.
 
-![rectangle_detection](https://github.com/SnehaSeeunvasavarathan/sudokusolver/blob/main/images/rectangle_detection.png)
+![rectangle_detection](https://github.com/SnehaSeenuvasavarathan/sudokusolver/blob/main/images/rectangle_detection.png)
 
 ```swift
 import Vision
@@ -70,7 +70,7 @@ do {
 
 The extracted rectangle's perspective is corrected using the CIFilter - perspectiveCorrection().
 
-![perspective_correction](https://github.com/SnehaSeeunvasavarathan/sudokusolver/blob/main/images/perspective_correction.png)
+![perspective_correction](https://github.com/SnehaSeenuvasavarathan/sudokusolver/blob/main/images/perspective_correction.png)
 
 ```swift
 import CoreImage
@@ -91,7 +91,7 @@ let correctedImage = perspectiveCorrection.outputImage!
 
 Individual cells are seperated from the resized, corrected rectangle based on coordinates.
 
-![cell_extraction](https://github.com/SnehaSeeunvasavarathan/sudokusolver/blob/main/images/cell_extraction.png)
+![cell_extraction](https://github.com/SnehaSeenuvasavarathan/sudokusolver/blob/main/images/cell_extraction.png)
 
 ### 4. Digit Recognition
 
